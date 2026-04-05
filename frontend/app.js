@@ -114,7 +114,6 @@ function renderCards(videos) {
     card.innerHTML = `
       <div class="card-thumb">
         <img src="${video.thumbnail}" alt="${escapeHtml(video.title)}" loading="lazy" />
-        <span class="card-category cat-${color}">${category}</span>
         <span class="card-number">${number}</span>
       </div>
       <div class="card-body">
