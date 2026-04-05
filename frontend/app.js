@@ -27,7 +27,7 @@ async function searchVideos() {
   loader.style.display = 'flex';
 
   try {
-    const res = await fetch(`http://127.0.0.1:8000/search?topic=${encodeURIComponent(topic)}`);
+    const res = await fetch(`https://learnify-kujb.onrender.com/search?topic=${encodeURIComponent(topic)}`);
     const data = await res.json();
 
     loader.style.display = 'none';
