@@ -15,6 +15,7 @@ def search_youtube(topic, max_results=25):
         "q": topic,
         "type": "video",
         "maxResults": max_results,
+        "videoDuration": "medium",
         "key": API_KEY
     }
 
@@ -83,5 +84,5 @@ def search_youtube(topic, max_results=25):
     # 🔹 STEP 5: Sort by score
     videos.sort(key=lambda x: x["score"], reverse=True)
 
-    # 🔹 STEP 6: Return TOP 5 best videos
-    return videos[:5]
+    # 🔹 STEP 6: Return all ranked videos
+    return videos
