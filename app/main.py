@@ -7,7 +7,7 @@ app = FastAPI()
 app.include_router(search.router)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://learnify-three-pi.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
